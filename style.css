@@ -276,8 +276,10 @@ section {
 }
 
 .about-details-container {
+  display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  flex-direction: column;
+  /* flex-direction: row; */
 }
 
 .about-containers,
@@ -293,6 +295,12 @@ section {
   position: absolute;
   right: -5rem;
   bottom: 2.5rem;
+}
+
+
+.text-container{
+  width: 70%;
+  text-align: justify;
 }
 
 .details-container {
@@ -347,7 +355,7 @@ section {
 article {
   display: flex;
   width: 10rem;
-  justify-content: space-around;
+  /* justify-content: space-around; */
   gap: 0.5rem;
 }
 
@@ -370,6 +378,7 @@ article .icon {
   border-radius: 2rem;
   width: 90%;
   height: 90%;
+  object-fit: cover;
 }
 
 .project-title {
